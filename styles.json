@@ -1,8 +1,50 @@
 {
+  "app": {
+    "header": {
+      "mainContainer": "common-main-header-container w-full p-1 w-full bg-white shadow-md transition-all flex flex-row flex-wrap items-center justify-between lg:z-2 lg:px-10 lg:py-4 print:shadow-none print:border-b",
+      "optionsContainer": "common-header-options-container w-auto select-disabled flex flex-row flex-nowrap items-center justify-start lg:hidden lg:w-auto lg:h-auto print:hidden",
+      "routeTitleSection": {
+        "routeTitleContainer": "common-route-title-container flex-grow ml-2 flex flex-row flex-nowrap justify-start lg:ml-6",
+        "routeTitle": "common-route-title w-fit max-w-[220px] text-left text-xs font-semibold uppercase tracking-wider lg:max-w-full print:w-full print:text-center print:text-xl"
+      },
+      "profileSection": {
+        "profileContainer": "common-profile-container hidden w-0 select-disabled cursor-pointer transition-all flex-row flex-nowrap items-center justify-end lg:flex lg:w-auto print:hidden"
+      }
+    },
+    "menu": {
+      "mainContainer": "common-menu-container absolute top-0 left-0 z-10 h-full min-w-0 max-w-full bg-themeMain-reg text-white shadow-inner transition-all duration-100 lg:block print:hidden",
+      "innerContainer": "common-menu-container-inner sticky top-0 flex flex-col flex-nowrap justify-start",
+      "companyLogo": "common-company-logo relative w-full my-4 p-4 bg-no-repeat bg-center overflow-hidden transition-all flex flex-col flex-nowrap items-center justify-center"
+    },
+    "dashboard": {
+      "mainContainer": "common-dashboard-container relative w-full h-full shadow-top-bottom flex flex-col flex-nowrap justify-center",
+      "innerContainer": "common-dashboard-container-inner w-full h-full py-5 bg-white bg-opacity-95 flex flex-col flex-nowrap justify-center",
+      "messageClasses": "common-dashboard-user-message w-full p-5 text-center text-gray-600 flex flex-col flex-nowrap items-center justify-center",
+      "panelsGrid": "common-dashboard-panels-grid items-grid w-full h-full max-w-massive px-6 flex flex-col flex-wrap items-center justify-center lg:flex-row lg:px-2",
+      "panelMainContainer": "common-dashboard-panel-container w-full max-w-[280px] p-2 transition-all flex flex-col flex-nowrap items-center justify-center lg:w-1/4 lg:h-15 lg:max-w-full",
+      "panelInnerContainer": "common-dashboard-panel-container-inner w-full h-full px-4 py-5 bg-opacity-80 rounded text-center uppercase no-underline cursor-pointer shadow-md border transition-all flex flex-col flex-nowrap items-center justify-evenly hover:shadow-lg"
+    }
+  },
+  "pagination": {
+    "mainContainer": "common-pagination-container w-full py-0 px-5 mb-5 mt-7 mx-auto flex flex-row flex-nowrap items-center justify-start",
+    "innerContainer": "common-pagination-container-inner w-full flex flex-row flex-nowrap items-center justify-center",
+    "pagesContainer": {
+      "pageNavigationContainer": "common-pagination-previous-container max-w-full w-auto flex flex-col flex-nowrap items-center justify-center",
+      "numbersContainer": "common-pagination-numbers-container min-w-auto w-auto max-w-full flex flex-row flex-nowrap items-center justify-center",
+      "arrowIcon": "common-pagination-arrow-icon block w-2.5 h-2.5 m-0 border-t-2 border-r-2 border-gray-700 transform transition-all hover:border-themeMain-reg",
+      "pageLink": "common-pagination-page-link relative flex-grow min-w-2 my-0 mx-1 py-2.5 px-4 text-xs font-normal lowercase rounded-sm border border-transparent transition-all flex flex-col flex-nowrap items-center justify-center lg:text-sm hover:border-themeMain-dark",
+      "pageLinkActive": "common-pagination-page-link--active current-page text-white bg-themeMain-reg cursor-default shadow-md",
+      "pageLinkInactive": "common-pagination-page-link--inactive bg-transparent text-gray-600 cursor-pointer"
+    }
+  },
   "table": {
-    "rowClasses": "row w-full my-8 border border-gray-300 shadow-md font-themeMontserrat transition-all flex flex-col flex-nowrap items-center justify-start lg:border-l-0 lg:border-r-0 lg:border-t-0 lg:border-b lg:py-3 lg:my-0 lg:shadow-none lg:flex-row lg:bg-white lg:hover:bg-gray-100",
-    "cellClasses": "cell flex-grow w-full py-2 border-b border-gray-300 flex flex-row flex-nowrap items-center justify-center last:border-b-0 lg:py-0 lg:border-b-0 lg:border-r lg:first:border-l lg:first:border-t-0 lg:last:border-b-0",
-    "cellTitleClasses": "cell-title w-1/2 px-4 py-2 border-r border-gray-300 text-center text-xxs font-semibold lg:hidden lg:w-full lg:border-r-0 lg:text-xs",
-    "cellValueClasses": "cell-value w-1/2 px-2 py-1 text-center text-xxs lg:w-full"
+    "rowClasses": "common-table-row w-full my-8 border-r border-l border-gray-300 shadow-md font-themeMontserrat transition-all flex flex-col flex-nowrap items-center justify-start lg:border-l-0 lg:border-r-0 lg:border-b lg:py-3 lg:my-0 lg:shadow-none lg:flex-row lg:bg-white lg:hover:bg-gray-100",
+    "cellClasses": "common-table-cell flex-grow w-full py-2 border-b border-gray-300 flex flex-row flex-nowrap items-center justify-center last:border-b-0 lg:py-0 lg:border-b-0 lg:border-r lg:first:border-l lg:first:border-t-0 lg:last:border-b-0",
+    "cellTitleClasses": "common-table-cell-title w-1/2 px-4 py-2 border-r border-gray-300 text-center text-xxs font-semibold lg:hidden lg:w-full lg:border-r-0 lg:text-xs",
+    "cellValueClasses": "common-table-cell-value w-1/2 px-2 py-1 text-center text-xxs lg:w-full",
+    "cellValueLinkClasses": "common-table-cell-value-link w-1/2 text-center text-xxs flex flex-row flex-nowrap justify-center lg:w-full",
+    "cellValueDocumentClasses": "common-table-cell-value-document w-full h-full  px-4 py-2 w-full h-full no-underline outline-none rounded-md cursor-pointer flex flex-col flex-nowrap items-center justify-center",
+    "cellValueIconButtonClasses": "common-table-cell-value-icon w-auto flex flex-col flex-nowrap items-center justify-center",
+    "cellLinkClasses": "common-table-cell-link py-2 no-underline tracking-wide font-semibold"
   }
 }
