@@ -12,9 +12,11 @@
       }
     },
     "menu": {
-      "mainContainer": "common-menu-container absolute top-0 left-0 z-10 h-full min-w-0 max-w-full bg-themeMain-reg text-white shadow-inner transition-all duration-100 lg:block print:hidden",
+      "mainContainer": "common-menu-container menu-container absolute top-0 left-0 z-10 h-full min-w-0 max-w-full bg-themeMain-reg text-white shadow-inner transition-all duration-100 lg:block print:hidden",
       "innerContainer": "common-menu-container-inner sticky top-0 flex flex-col flex-nowrap justify-start",
-      "companyLogo": "common-company-logo relative w-full my-4 p-4 bg-no-repeat bg-center overflow-hidden transition-all flex flex-col flex-nowrap items-center justify-center"
+      "companyLogo": "common-company-logo relative w-full my-4 p-4 bg-no-repeat bg-center overflow-hidden transition-all flex flex-col flex-nowrap items-center justify-center",
+      "linkClasses": "common-menu-link relative w-full p-4 text-gray-50 no-underline opacity-80 overflow-hidden cursor-pointer transition-all flex flex-row flex-nowrap items-center overflow-hidden justify-start hover:opacity-100 hover:bg-themeMain-dark",
+      "logoutClasses": "common-menu-logout relative w-full bg-no-repeat bg-center flex flex-col flex-nowrap items-center justify-center"
     },
     "dashboard": {
       "mainContainer": "common-dashboard-container relative w-full h-full shadow-top-bottom flex flex-col flex-nowrap justify-center",
